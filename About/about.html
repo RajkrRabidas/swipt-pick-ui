@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Design</title>
+    
+        <link rel="stylesheet" href="/style.css" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+      </head>
+      <body class="showCart bg-gray-100">
+        <div id="main" class="container mx-auto">
+    <div class="header flex items-center justify-between bg-white shadow-md">
+        <a class="logo" href="#"
+          ><img src="/images/logo.png" alt="Logo" class="h-12"
+        /></a>
+
+        <nav class="navbar">
+          <ul class="flex space-x-12">
+            <li>
+              <a
+                href="/index.html"
+                class="text-gray-700 hover:text-gray-900"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="/shop/shop.html" class="text-gray-700 hover:text-gray-900">Shop</a>
+            </li>
+            <li>
+              <a href="/contact/contact.html" class="text-gray-700 hover:text-gray-900"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="icons flex space-x-4">
+          <div class="full-div">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Courses</a>
+            <a href="">Services</a>
+            <a href="">Contact Us</a>
+
+            <i class="ri-close-line"></i>
+          </div>
+
+          <a href="#"
+            ><i class="ri-search-line text-gray-700 hover:text-gray-900"></i
+          ></a>
+          <a class="icon-cart" href="#"
+            ><i
+              class="ri-shopping-cart-line text-gray-700 hover:text-gray-900"
+            ></i
+          ></a>
+          <span id="iconCartSpan">0</span>
+
+            <div class="link">
+              <a href="#" class="active"
+              ><i
+                class="fa-regular fa-circle-user"
+              ></i
+            ></a>
+            <ul class="box">
+                  <li><a class="text-2xl font-medium" href="#">My Account</a></li>
+                  <li><a class="text-2xl font-medium" href="#">profile</a></li>
+                  <li><a class="text-2xl font-medium" href="#">My Orders</a></li>
+                  <li><a class="text-2xl font-medium" href="#">Logout</a></li>
+            </ul>
+            </div>
+
+          <a class="menu" href="#"><i class="ri-menu-3-line"></i></a>
+        </div>
+      </div>
+      <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut">Check Out</button>
+        </div>
+      </div>
+      </div>
+
+      <script src="/script.js"></script>
+</body>
+</html>

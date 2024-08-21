@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css"
+    /> -->
+  </head>
+
+  <body class="showCart bg-gray-100">
+    <div id="main" class="container mx-auto">
+      <!-- header section -->
+      <div class="header flex items-center justify-between bg-white shadow-md">
+        <a class="logo" href="#"
+          ><img src="/logo2.png" alt="Logo" class="h-12 w-full"
+        /></a>
+
+        <nav class="navbar">
+          <ul class="flex space-x-12">
+            <li>
+              <a
+                href="./shop/shop.html"
+                class="text-gray-700 hover:text-gray-900"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 hover:text-gray-900">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 hover:text-gray-900"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="icons flex space-x-4">
+          <div class="full-div">
+            <a href="/index.html">Home</a>
+            <a href="/shop/shop.html">Shop</a>
+            <a href="/About/about.html">About</a>
+            <a href="/contact/contact.html">Contact Us</a>
+            <a href="./product-detailPage/product-delails.html">Singal product</a>
+
+            <i class="ri-close-line"></i>
+          </div>
+
+          <div class="search-icon cursor-pointer">
+            <i class="ri-search-line text-gray-700 hover:text-gray-900"></i>
+        </div>
+          <a class="icon-cart" href="#"
+            ><i
+              class="ri-shopping-cart-line text-gray-700 hover:text-gray-900"
+            ></i
+          ></a>
+          <span id="iconCartSpan">0</span>
+
+            <div class="link">
+              <a href="#" class="active"
+              ><i
+                class="fa-regular fa-circle-user text-gray-700 hover:text-gray-900"
+              ></i
+            ></a>
+            <ul class="box">
+                  <li><a class="text-2xl font-medium" href="#">My Account</a></li>
+                  <li><a class="text-2xl font-medium" href="#">profile</a></li>
+                  <li><a class="text-2xl font-medium" href="#">My Orders</a></li>
+                  <li><a class="text-2xl font-medium" href="#">Logout</a></li>
+            </ul>
+            </div>
+
+            <a class="menu" href="#"><i class="ri-menu-3-line"></i></a>
+          </div>
+        </div>
+        
+        <div class="searchBox items-center relative">
+          <input type="text" placeholder="Search here . . ." class="px-6 py-4 border outline-none rounded-md text-xl" />
+          <i class="fas fa-times close-icon text-2xl absolute"></i>
+      </div>
+      <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut">Check Out</button>
+        </div>
+      </div>
+
+      <!-- hero section -->
+      <section
+        class="hero w-full h-[70vh] container mx-auto text-center grid grid-cols-1 md:grid-cols-2 items-center"
+      >
+        <div class="max-w-2xl w-full mx-auto row-span-1">
+          <div class="left-side">
+            <span
+              class="inline-block text-xl table bg-purple-500 text-white px-5 py-2 rounded-full mb-4"
+              >Sale up to 20% OFF</span
+            >
+            <h1 class="md:text-6xl font-bold mb-4">
+              Discover Trendy
+              <span class="text-purple-700">Fashion</span> Everyday
+            </h1>
+            <p class="text-gray-700 mb-6">
+              Elevate Your Style with the Latest in Clothing and Accessories
+            </p>
+            
+            <a
+              href="#"
+              class="bg-purple-500 text-2xl table text-white px-10 py-5 rounded-lg shadow hover:bg--800"
+              >Buy Product</a
+            >
+          </div>
+        </div>
+
+        <!-- <div class="banner">
+          <img
+            src="./banner-1.jpg"
+            alt="Banner Image"
+            class="w-full h-auto"
+          />
+        </div> -->
+      </section>
+
+      <!-- categories section -->
+      <main class="container mx-auto my-10 px-4">
+        <h2 class="text-4xl font-bold mb-8 text-center">Explore Categories</h2>
+        <div
+          class="categories-list mb-32 flex justify-center item-center w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6"
+        >
+          <div
+            class="category bg-white shadow rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 p-4 text-center"
+          >
+            <a href="#" class="block">
+              <div
+                class="w-full h-32 flex items-center justify-center overflow-hidden mb-4"
+              >
+                <img
+                  src="/cetagories/exclusive.png"
+                  alt="Vegetables"
+                  class="object-contain h-full w-full rounded"
+                />
+              </div>
+              <p class="text-2xl font-semibold">Electronics</p>
+            </a>
+          </div>
+          <div
+            class="category bg-white shadow rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 p-4 text-center"
+          >
+            <a href="#" class="block">
+              <div
+                class="w-full h-32 flex items-center justify-center overflow-hidden mb-4"
+              >
+                <img
+                  src="/cetagories/f6.jpg"
+                  alt="Clothing"
+                  class="object-contain w-full rounded"
+                />
+              </div>
+              <p class="text-2xl font-semibold">Clothing</p>
+            </a>
+          </div>
+          <div
+            class="category bg-white shadow rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 p-4 text-center"
+          >
+            <a href="#" class="block">
+              <div
+                class="w-full h-32 flex items-center justify-center overflow-hidden mb-4"
+              >
+                <img
+                  src="/cetagories/redmi.webp"
+                  alt="Snacks & Sweets"
+                  class="object-contain h-full w-full rounded"
+                />
+              </div>
+              <p class="text-2xl font-semibold">Mobiles</p>
+            </a>
+          </div>
+          <div
+            class="category bg-white shadow rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 p-4 text-center"
+          >
+            <a href="#" class="block">
+              <div
+                class="w-full h-32 flex items-center justify-center overflow-hidden mb-4"
+              >
+                <img
+                  src="/cetagories/beauty.jpg"
+                  alt="Meats"
+                  class="object-contain h-full w-full rounded"
+                />
+              </div>
+              <p class="text-2xl font-semibold">Beauty</p>
+            </a>
+          </div>
+
+          <div
+            class="category bg-white shadow rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 p-4 text-center"
+          >
+            <a href="#" class="block">
+              <div
+                class="w-full h-32 flex items-center justify-center overflow-hidden mb-4"
+              >
+                <img
+                  src="/cetagories/product shoes.jpg"
+                  alt="Meats"
+                  class="object-contain w-full rounded"
+                />
+              </div>
+              <p class="text-2xl font-semibold">Sneaker Shoes</p>
+            </a>
+          </div>
+
+          <div
+            class="category bg-white shadow rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 p-4 text-center"
+          >
+            <a href="#" class="block">
+              <div
+                class="w-full h-32 flex items-center justify-center overflow-hidden mb-4"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/61KbBogOOWL._AC_SY200_.jpg"
+                  alt="Meats"
+                  class="object-contain w-full rounded"
+                />
+              </div>
+              <p class="text-2xl font-semibold">Home & Kitchen</p>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- popular products section -->
+
+      <main class="container mx-auto mt-40 my-20 px-4">
+        <h2 class="text-6xl font-bold mb-10 text-left">Products Explore</h2>
+        <div
+          class="productlist grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
+          <!-- Product 1 -->
+        </div>
+      </main>
+
+      <!-- testimonials section -->
+      <section class="testimonials bg-gray-100 py-12 mt-20">
+        <div class="container mx-auto px-4">
+          <h2 class="text-5xl font-bold mb-14 text-center">
+            What Our Customers Say
+          </h2>
+          <div class="flex flex-wrap justify-center">
+            <div
+              class="testimonial bg-white shadow-md rounded-lg p-6 mx-4 mb-8 h-48 w-full sm:w-1/2 lg:w-2/5"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="/user-1.png"
+                  alt="Customer 1"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p class="text-2xl font-semibold">John Doe</p>
+                  <p class="text-gray-600 text-xl">Verified Buyer</p>
+                </div>
+              </div>
+              <p class="text-gray-800 text-xl">
+                "Excellent service and great quality products. Highly
+                recommend!"
+              </p>
+            </div>
+            <div
+              class="testimonial bg-white shadow-md rounded-lg p-6 mx-4 mb-8 h-48 w-full sm:w-1/2 lg:w-2/5"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="/user-2.png"
+                  alt="Customer 1"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p class="text-2xl font-semibold">John Doe</p>
+                  <p class="text-gray-600 text-xl">Verified Buyer</p>
+                </div>
+              </div>
+              <p class="text-gray-800 text-xl">
+                "Excellent service and great quality products. Highly
+                recommend!"
+              </p>
+            </div>
+            <div
+              class="testimonial bg-white shadow-md rounded-lg p-6 mx-4 mb-8 h-48 w-full sm:w-1/2 lg:w-2/5"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="/user-3.png"
+                  alt="Customer 1"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p class="text-2xl font-semibold">John Doe</p>
+                  <p class="text-gray-600 text-xl">Verified Buyer</p>
+                </div>
+              </div>
+              <p class="text-gray-800 text-xl">
+                "Excellent service and great quality products. Highly
+                recommend!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter bg-green-900 py-6 text-white">
+        <div
+          class="newsbox container px-5 mx-auto flex flex-col md:flex-row items-center justify-between"
+        >
+          <div class="max-w-2xl w-full text-center md:text-left mb-6 md:mb-0">
+            <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-5">
+              Get On the list?
+            </h2>
+            <p class="text-lg md:text-xl mb-4 md:mb-6">
+              Sign up with your email address to receive updates.
+            </p>
+          </div>
+          <form
+            action="#"
+            method="post"
+            class="w-full md:w-auto flex flex-col md:flex-row items-center"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email..."
+              class="w-96 md:w-96 p-3 mb-4 md:mb-0 rounded-md text-lg md:text-2xl text-gray-700 focus:outline-none"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-white text-lg md:text-xl font-semibold text-black px-6 py-3 md:py-4 rounded-md hover:bg-gray-200 transition duration-300"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-white py-20">
+        <div class="container mx-auto px-5">
+          <div class="flex flex-wrap item-center justify-between">
+            <!-- Company Links -->
+            <div class="w-full sm:w-1/4 mb-6">
+              <h3 class="text-3xl font-semibold mb-4">Company</h3>
+              <ul class="text-gray-600 font-normal text-2xl">
+                <li><a href="#" class="hover:text-black">About</a></li>
+                <li><a href="#" class="hover:text-black">Features</a></li>
+                <li><a href="#" class="hover:text-black">Works</a></li>
+                <li><a href="#" class="hover:text-black">Career</a></li>
+              </ul>
+            </div>
+            <!-- FAQ Links -->
+            <div class="w-full sm:w-1/4 mb-6">
+              <h3 class="text-3xl font-semibold mb-4">FAQ</h3>
+              <ul class="text-gray-600 font-normal text-2xl">
+                <li><a href="#" class="hover:text-black">Account</a></li>
+                <li><a href="#" class="hover:text-black">Deliveries</a></li>
+                <li><a href="#" class="hover:text-black">Orders</a></li>
+                <li><a href="#" class="hover:text-black">Payments</a></li>
+              </ul>
+            </div>
+            <!-- Resources Links -->
+            <div class="w-full sm:w-1/4 mb-6">
+              <h3 class="text-3xl font-semibold mb-4">Resources</h3>
+              <ul class="text-gray-600 font-normal text-2xl">
+                <li>
+                  <a href="#" class="hover:text-black">Youtube Playlist</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-black">Development Tutorials</a>
+                </li>
+                <li><a href="#" class="hover:text-black">Free eBooks</a></li>
+              </ul>
+            </div>
+            <!-- Social Links -->
+            <div class="w-full sm:w-1/4 mb-6">
+              <h3 class="text-3xl font-bold mb-4">Social</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-black text-2xl"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-black text-2xl"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-black text-2xl"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-end items-center mt-4">
+            <div class="flex space-x-4">
+              <img src="../logo-oppo.png" alt="Visa" class="h-8" />
+              <img src="../logo-godrej.png" alt="Mastercard" class="h-8" />
+              <img src="../logo-paypal.png" alt="Paypal" class="h-8" />
+              <img src="../app-store.png" alt="Apple Pay" class="h-8" />
+              <img src="../play-store.png" alt="Google Pay" class="h-8" />
+            </div>
+          </div>
+          <p class="text-gray-600 text-xl text-center mt-10">Copyright 2024 By Raj</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

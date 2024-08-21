@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Design</title>
+      
+        <link rel="stylesheet" href="/shop/shop.css" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" />
+      </head>
+      
+<body>
+    <div id="main" class="container mx-auto">
+        <!-- header section -->
+        <div class="header flex items-center justify-between bg-white shadow-md">
+          <a class="logo" href="#"><img src="/images/logo.png" alt="Logo" class="h-12" /></a>
+    
+          <nav class="navbar">
+            <ul class="flex space-x-12">
+              <li>
+                <a href="/index.html" class="text-gray-700 hover:text-gray-900">Home</a>
+              </li>
+              <li>
+                <a href="/About/about.html" class="text-gray-700 hover:text-gray-900">About</a>
+              </li>
+              <li>
+                <a href="/contact/contact.html" class="text-gray-700 hover:text-gray-900">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="icons flex space-x-4">
+            <div class="full-div">
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Courses</a>
+              <a href="">Services</a>
+              <a href="">Contact Us</a>
+    
+              <i class="ri-close-line"></i>
+            </div>
+    
+            <a href="#"><i class="ri-search-line text-gray-700 hover:text-gray-900"></i></a>
+            <a class="icon-cart" href="#"><i class="ri-shopping-cart-line text-gray-700 hover:text-gray-900"></i></a>
+            <span>0</span>
+            <a href="#"><i class="fa-regular fa-circle-user text-gray-700 hover:text-gray-900"></i></a>
+            <a class="menu" href="#"><i class="ri-menu-3-line"></i></a>
+          </div>
+        </div>
+        <div class="cartTab">
+          <h1>Shopping Cart</h1>
+          <div class="listCart">
+              <div class="item">
+                <div class="image">
+                  <img src="./images/products/f4.jpg" alt="">
+                </div>
+                <div class="name text-2xl">
+                  name
+                </div>
+                <div class="totalPrice text-2xl">
+                  $200
+                </div>
+                <div class="quantity">
+                  <span class="minus"><</span>
+                  <span>1</span>
+                  <span class="plus">></span>
+                </div>
+              </div>
+    
+               <div class="item">
+                <div class="image">
+                  <img src="./images/products/f4.jpg" alt="">
+                </div>
+                <div class="name">
+                  name
+                </div>
+                <div class="totalPrice">
+                  $200
+                </div>
+                <div class="quantity">
+                  <span class="minus"><</span>
+                  <span>1</span>
+                  <span class="plus">></span>
+                </div>
+              </div>
+          </div>
+          <div class="btn">
+              <button class="close">CLOSE</button>
+              <button class="checkOut">Check Out</button>
+          </div>
+      </div>
+    
+        <!-- hero section -->
+        <section class="hero w-full h-[70vh] container mx-auto text-center grid grid-cols-1 md:grid-cols-2 items-center">
+          <div class="max-w-2xl w-full mx-auto row-span-1">
+            <div class="left-side">
+              <span class="inline-block text-xl table bg-purple-500 text-white px-5 py-2 rounded-full mb-4">Sale up to 20%
+                OFF</span>
+              <h1 class="md:text-6xl font-bold mb-4">Get Fresh Organic <span class="text-purple-700">Food</span> Everyday
+              </h1>
+              <p class="text-gray-700 mb-6">Making Grocery Food Errands Worth Your While</p>
+              <a href="#" class="bg-green-700 text-2xl table text-white px-10 py-5 rounded-lg shadow hover:bg-green-800">Buy
+                Product</a>
+            </div>
+          </div>
+    
+          <div class="banner">
+          </div>
+        </section>
+    
+        <!-- popular products section -->
+    
+        <main class="container mx-auto my-10 px-4">
+          <h2 class="text-5xl font-bold mb-10 text-left">Products Explore</h2>
+          <!-- <p class="btn-swiper">
+              <span>&#139;</span>
+              <span>&#155;</span>
+            </p> -->
+          <div class="swiper-container books_store">
+            <div class="swiper-wrapper">
+              <!-- Product Card -->
+              <div class="swiper-slide">
+                <img src="./images/shoes product/product-2 (1).jpg" alt="Book 1" />
+                <div class="product-details text-center">
+                  <div class="rating flex items-center justify-center mb-2">
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-gray-300"><i class="fas fa-star"></i></span>
+                    <span class="ml-2 text-blue-500 text-xl">4.6</span>
+                  </div>
+                  <p class="text-3xl text-center font-semibold mb-2">Nike Shoes</p>
+                  <a href="#" class="text-xl text-center font-bold text-green-600">Rs.599</a>
+                  <p class="text-gray-500 text-center line-through">Rs.999</p>
+                  <button
+                    class="bg-green-700 text-xl text-white px-4 py-2 rounded-full shadow hover:bg-green-800 transition duration-300">
+                    Add To Cart
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <img src="./images/products/f1.jpg" alt="Book 1" />
+                <div class="product-details text-center">
+                  <div class="rating flex items-center justify-center mb-2">
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-gray-300"><i class="fas fa-star"></i></span>
+                    <span class="ml-2 text-blue-500 text-xl">4.6</span>
+                  </div>
+                  <p class="text-3xl text-center font-semibold mb-2">Shirt</p>
+                  <a href="#" class="text-xl text-center font-bold text-green-600">Rs.249</a>
+                  <p class="text-gray-500 text-center line-through">Rs.500</p>
+                  <button
+                    class="bg-green-700 text-xl text-white px-4 py-2 rounded-full shadow hover:bg-green-800 transition duration-300">
+                    Add To Cart
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <img src="./images/products/product-3.jpg" alt="Book 1" />
+                <div class="product-details text-center">
+                  <div class="rating flex items-center justify-center mb-2">
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-gray-300"><i class="fas fa-star"></i></span>
+                    <span class="ml-2 text-blue-500 text-xl">4.6</span>
+                  </div>
+                  <p class="text-3xl text-center font-semibold mb-2">Pant</p>
+                  <a href="#" class="text-xl text-center font-bold text-green-600">Rs.439</a>
+                  <p class="text-gray-500 text-center line-through">Rs.499</p>
+                  <button
+                    class="bg-green-700 text-xl text-white px-4 py-2 rounded-full shadow hover:bg-green-800 transition duration-300">
+                    Add To Cart
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <img src="./images/products/product-4.jpg" alt="Book 1" />
+                <div class="product-details text-center">
+                  <div class="rating flex items-center justify-center mb-2">
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-gray-300"><i class="fas fa-star"></i></span>
+                    <span class="ml-2 text-blue-500 text-xl">4.6</span>
+                  </div>
+                  <p class="text-3xl text-center font-semibold mb-2">Puma t-shirt</p>
+                  <a href="#" class="text-xl text-center font-bold text-green-600">Rs.699</a>
+                  <p class="text-gray-500 text-center line-through">Rs.999</p>
+                  <button
+                    class="bg-green-700 text-xl text-white px-4 py-2 rounded-full shadow hover:bg-green-800 transition duration-300">
+                    Add To Cart
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <img src="./images/products/product4.jpg" alt="Book 1" />
+                <div class="product-details text-center">
+                  <div class="rating flex items-center justify-center mb-2">
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-gray-300"><i class="fas fa-star"></i></span>
+                    <span class="ml-2 text-blue-500 text-xl">4.6</span>
+                  </div>
+                  <p class="text-3xl text-center font-semibold mb-2">adidas botal</p>
+                  <a href="#" class="text-xl text-center font-bold text-green-600">Rs.499</a>
+                  <p class="text-gray-500 text-center line-through">Rs.699</p>
+                  <button
+                    class="bg-green-700 text-xl text-white px-4 py-2 rounded-full shadow hover:bg-green-800 transition duration-300">
+                    Add To Cart
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <img src="./images/products/product-12.jpg" alt="Book 1" />
+                <div class="product-details text-center">
+                  <div class="rating flex items-center justify-center mb-2">
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="text-2xl text-gray-300"><i class="fas fa-star"></i></span>
+                    <span class="ml-2 text-blue-500 text-xl">4.6</span>
+                  </div>
+                  <p class="text-3xl text-center font-semibold mb-2">Tauger</p>
+                  <a href="#" class="text-xl text-center font-bold text-green-600">Rs.299</a>
+                  <p class="text-gray-500 text-center line-through">Rs.499</p>
+                  <button
+                    class="bg-green-700 text-xl text-white px-4 py-2 rounded-full shadow hover:bg-green-800 transition duration-300">
+                    Add To Cart
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Add more product items as needed -->
+            </div>
+    
+          </div>
+    
+        </main>
+    
+        <!-- Footer Section -->
+    <footer class="bg-white py-20">
+      <div class="container mx-auto px-5">
+        <div class="flex flex-wrap item-center justify-between">
+          <!-- Company Links -->
+          <div class="w-full sm:w-1/4 mb-6">
+            <h3 class="text-3xl font-semibold mb-4">Company</h3>
+            <ul class="text-gray-600 font-normal text-2xl">
+              <li><a href="#" class="hover:text-black">About</a></li>
+              <li><a href="#" class="hover:text-black">Features</a></li>
+              <li><a href="#" class="hover:text-black">Works</a></li>
+              <li><a href="#" class="hover:text-black">Career</a></li>
+            </ul>
+          </div>
+          <!-- FAQ Links -->
+          <div class="w-full sm:w-1/4 mb-6">
+            <h3 class="text-3xl font-semibold mb-4">FAQ</h3>
+            <ul class="text-gray-600 font-normal text-2xl">
+              <li><a href="#" class="hover:text-black">Account</a></li>
+              <li><a href="#" class="hover:text-black">Deliveries</a></li>
+              <li><a href="#" class="hover:text-black">Orders</a></li>
+              <li><a href="#" class="hover:text-black">Payments</a></li>
+            </ul>
+          </div>
+          <!-- Resources Links -->
+          <div class="w-full sm:w-1/4 mb-6">
+            <h3 class="text-3xl font-semibold mb-4">Resources</h3>
+            <ul class="text-gray-600 font-normal text-2xl">
+              <li><a href="#" class="hover:text-black">Youtube Playlist</a></li>
+              <li><a href="#" class="hover:text-black">Development Tutorials</a></li>
+              <li><a href="#" class="hover:text-black">Free eBooks</a></li>
+            </ul>
+          </div>
+          <!-- Social Links -->
+          <div class="w-full sm:w-1/4 mb-6">
+            <h3 class="text-3xl font-bold mb-4">Social</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-600 hover:text-black text-2xl"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-gray-600 hover:text-black text-2xl"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-gray-600 hover:text-black text-2xl"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mt-10">
+          <p class="text-gray-600 text-xl">Copyright 2024 By Raj </p>
+          <div class="flex space-x-4">
+            <img src="visa-logo.png" alt="Visa" class="h-6">
+            <img src="mastercard-logo.png" alt="Mastercard" class="h-6">
+            <img src="paypal-logo.png" alt="Paypal" class="h-6">
+            <img src="applepay-logo.png" alt="Apple Pay" class="h-6">
+            <img src="googlepay-logo.png" alt="Google Pay" class="h-6">
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+      </div>
+
+      <script src="/script.js"></script>
+</body>
+</html>
